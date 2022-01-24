@@ -1,0 +1,85 @@
+/*
+
+File Name: style.less
+Date: 02/12/2021
+Programmer: Ella Seaman
+
+*/
+
+// out: null
+
+.headingStyle(@paramColor; @paramSize) {
+    color: @paramColor;
+    font-size: @paramSize;
+    font-weight: bold;
+    line-height: @paramSize;
+    margin-top: @paramSize / 2;
+    margin-bottom: @paramSize / 2;
+    text-transform: uppercase;
+}
+
+.transition(@paramSeconds) {
+    -webkit-transition: all @paramSeconds ease-in-out;
+    -moz-transition: all @paramSeconds ease-in-out;
+    -o-transition: all @paramSeconds ease-in-out;
+    transition: all @paramSeconds ease-in-out;
+}
+
+.borderBackgroundAndRadius(@paramColor; @paramRadius) {
+    background-color: @paramColor;
+    border-radius: @paramRadius;
+}
+
+.leftDropShadow(@paramBorder; @paramShadow) {
+    border: @paramBorder;
+    box-shadow: @paramShadow;
+    -moz-box-shadow: @paramShadow;
+    -webkit-box-shadow: @paramShadow;
+    -o-box-shadow: @paramShadow;
+}
+
+.gradient(@paramColor) {
+  background-image:@paramColor;
+}
+
+.expand() {
+   transform: scale(1.1);
+   display: inline-block;
+}
+
+.transparent() {
+  opacity: 0.5;
+}
+
+
+.border() {
+    border: 1px transparent;
+    border-radius: 5px;
+}
+
+.emphasize() {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.bold() {
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+.flipH() {
+    transform: scale(-1);
+}
+
+.textSpace() {
+    letter-spacing: 0.1em;
+    
+}
+.space() {
+    padding: .5em;
+    margin: .5em;
+}
+
+.pageBreak() {
+    border-bottom: 10px solid black;
+}
